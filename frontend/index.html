@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SickNote Vault – Upload & Verify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>SickNote Vault</h1>
+
+  <section>
+    <h2>🩺 Doctor Upload Portal</h2>
+    <input type="text" id="patientName" placeholder="Patient Name" />
+    <input type="email" id="patientEmail" placeholder="Patient Email" />
+    <input type="text" id="doctorName" placeholder="Doctor Name" />
+    <input type="file" id="noteFile" accept="application/pdf" />
+    <button onclick="uploadNote()">Upload Sick Note</button>
+    <div id="uploadResult"></div>
+  </section>
+
+  <section>
+    <h2>🔍 Verify a Sick Note</h2>
+    <input type="text" id="noteId" placeholder="Enter Note ID here" />
+    <button onclick="verifyNote()">Verify</button>
+    <div id="result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
