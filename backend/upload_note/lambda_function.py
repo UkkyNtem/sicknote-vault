@@ -12,7 +12,7 @@ table_name = 'SickNotes'
 table = dynamodb.Table(table_name)
 
 BUCKET_NAME = 'sicknote-vault-bucket'
-FROM_EMAIL = 'ukementem5@gmail.com'
+FROM_EMAIL = '@example.com'
 
 def lambda_handler(event, context):
     try:
